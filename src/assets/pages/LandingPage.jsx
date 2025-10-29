@@ -21,12 +21,12 @@ export default function LandingPage() {
 
       <section
         id="home"
-        className="hero-section flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-24 bg-gradient-to-r from-green-50 to-sky-50"
+        className="hero-section flex flex-col md:flex-row items-center justify-between px-10 md:px-20 py-24 bg-linear-to-r from-green-50 to-sky-50"
       >
         <div className="hero-content md:w-1/2 space-y-6">
           <h2 className="text-5xl md:text-6xl font-extrabold leading-tight">
             Driving the Future of{" "}
-            <span className="bg-gradient-to-r from-green-400 to-sky-500 bg-clip-text text-transparent">
+            <span className="bg-linear-to-r from-green-400 to-sky-500 bg-clip-text text-transparent">
               Eco Mobility
             </span>
           </h2>
@@ -54,7 +54,7 @@ export default function LandingPage() {
         id="models"
         className="models-section py-20 px-10 md:px-20 text-center bg-white border-t border-gray-100"
       >
-        <h3 className="text-4xl font-bold mb-6 bg-gradient-to-r from-green-400 to-sky-500 bg-clip-text text-transparent">
+        <h3 className="text-4xl font-bold mb-6 bg-linear-to-r from-green-400 to-sky-500 bg-clip-text text-transparent">
           Featured Models
         </h3>
         <p className="text-gray-600 mb-12">
@@ -83,7 +83,7 @@ export default function LandingPage() {
             <div
               key={index}
               onClick={() => handleExplore(index)}
-              className="model-card bg-gradient-to-b from-white to-green-50 border border-gray-100 rounded-2xl shadow hover:shadow-xl transition p-6 cursor-pointer"
+              className="model-card bg-linear-to-b from-white to-green-50 border border-gray-100 rounded-2xl shadow hover:shadow-xl transition p-6 cursor-pointer"
             >
               <img
                 src={car.img}
@@ -101,7 +101,7 @@ export default function LandingPage() {
 
       <section
         id="about"
-        className="about-section py-20 px-10 md:px-20 bg-gradient-to-r from-green-50 to-sky-50 text-center"
+        className="about-section py-20 px-10 md:px-20 bg-linear-to-r from-green-50 to-sky-50 text-center"
       >
         <h3 className="text-4xl font-bold mb-6 text-gray-800">
           About Sakay Automotive
