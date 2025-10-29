@@ -1,0 +1,46 @@
+:root {
+	--sa-green: #22c55e;
+	--sa-sky: #0ea5e9;
+	--sa-dark: #111827;
+	--sa-ring: rgba(34, 197, 94, 0.35);
+}
+
+.sa-primary-button {
+	position: relative;
+	transform: translateZ(0);
+	will-change: transform, box-shadow;
+}
+
+.sa-primary-button:hover {
+	box-shadow: 0 10px 24px -6px rgba(14, 165, 233, 0.35);
+}
+
+.sa-primary-button:focus-visible {
+	outline: none;
+	box-shadow: 0 0 0 4px var(--sa-ring);
+}
+
+.sa-primary-button--outline {
+	background: transparent;
+}
+
+.sa-primary-button--secondary {
+	background: rgba(34, 197, 94, 0.12);
+}
+
+.sa-button-spinner {
+	inline-size: 1rem;
+	block-size: 1rem;
+	border: 2px solid rgba(255, 255, 255, 0.45);
+	border-top-color: #fff;
+	border-radius: 9999px;
+	animation: sa-spin 1s linear infinite;
+}
+
+@keyframes sa-spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+

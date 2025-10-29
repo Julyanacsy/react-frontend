@@ -1,0 +1,29 @@
+.sa-navbar {
+	backdrop-filter: blur(8px);
+	background: color-mix(in oklab, white 85%, transparent);
+}
+
+.sa-navbar a {
+	position: relative;
+}
+
+.sa-navbar a::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: -6px;
+	inline-size: 100%;
+	block-size: 2px;
+	background: linear-gradient(90deg, #22c55e, #0ea5e9);
+	opacity: 0;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 200ms ease, opacity 200ms ease;
+}
+
+.sa-navbar a:hover::after {
+	opacity: 1;
+	transform: scaleX(1);
+}
+
+

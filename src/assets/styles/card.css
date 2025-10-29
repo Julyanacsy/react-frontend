@@ -1,0 +1,14 @@
+.sa-feature-card {
+	transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.sa-feature-card:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 16px 28px -10px rgba(34, 197, 94, 0.25);
+}
+
+.sa-feature-card .sa-feature-icon {
+	filter: drop-shadow(0 8px 14px rgba(14, 165, 233, 0.25));
+}
+
+
